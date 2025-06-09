@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning">
+  <meta name="keywords" content="EgoR1, long video reasoning, egocentric video understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://shulin16.github.io/">Shulin Tian</a><sup>*1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://suikei-wang.github.io/">Ruiqi Wang</a><sup>*1,3</sup>,</span>
+              <br>
+              <span class="author-block">
+                <a href="https://github.com/hongming21">Hongming Guo</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://penghao-wu.github.io/">Penghao Wu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=kMui170AAAAJ">Yuhao Dong</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://leowang980.github.io/">Xiuying Wang</a><sup>1</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="http://jingkang50.github.io/">Jingkang Yang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www2.cs.sfu.ca/~haoz/">Hao Zhang</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://hongyuanzhu.github.io/">Hongyuan Zhu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanyang Technological University,</span>
+              <span class="author-block"><sup>2</sup>A*STAR, Singapore,</span>
+              <span class="author-block"><sup>3</sup>Simon Fraser University,</span>
+              <span class="author-block"><sup>4</sup>Shanghai AI Lab</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/egolife-ai/Ego-R1" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/Ego-R1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted playsinline height="100%">
+          <source src="./static/videos/teaser.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Ego-R1 Agent orchestrates specialized tools to answer the question step-by-step, based on the observations and previous actions.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/steve.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/chair-tp.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/shiba.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/fullbody.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-blueshirt">
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/blueshirt.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-mask">
+            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/mask.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-coffee">
+            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/coffee.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/toby2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We introduce <strong>Ego-R1</strong>, a novel framework for reasoning over ultra-long (i.e.,in days and weeks) egocentric videos, which leverages a structured <strong>Chain-of-Tool-Thought (CoTT)</strong> process, orchestrated by an <strong>Ego-R1 Agent</strong> trained via reinforcement learning (RL). 
+            </p>
+            <p>
+              Inspired by human problem-solving strategies, CoTT decomposes complex reasoning into modular steps, with the RL agent invoking specific tools, one per step, to iteratively and collaboratively answer sub-question stackling such tasks as temporal retrieval and multi-modal understanding. We design a two-stage training paradigm involving supervised finetuning (SFT) of a pretrained language model using CoTT data and RL to enable our agent to dynamically propose step-by-step tools for long-range reasoning.
+              To facilitate training, we construct a dataset called <strong>Ego-R1 Data</strong>, which consists of <strong>Ego-CoTT-25K</strong> for SFT and <strong>Ego-QA-4.4K</strong> for RL. Furthermore, our Ego-R1 agent is evaluated on a newly curated week-long video QA benchmark, <strong>Ego-R1 Bench</strong>, which contains human-verified QA pairs from hybrid sources. 
+            </p>
+            <p>
+              Extensive results demonstrate that the dynamic, tool-augmented chain-of-thought reasoning by our Ego-R1 Agent can effectively tackle the unique challenges of understanding ultra-long egocentric videos, significantly extending the time coverage from few hours to a week.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Ego-R1 Data: Chain-of-Tool-Thought (CoTT) for Video Reasoning</h2>
+          <p>
+            To unleash the reasoning capabilities of LLM under the CoT prompting paradigm and to enable dynamic tool selection conditioned on current observations and past actions, we introduce Ego-R1 Data, a dataset designed to enable agentic tool-use with Chain-of-Tool-Thought (CoTT) reasoning chains.
+          </p>
+          <br>
+          <div class="content has-text-centered">
+            <video id="replay-video" autoplay muted playsinline width="100%">
+              <source src="./static/videos/data-gen.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-justified"><strong>Data generation pipeline of the Ego-R1 Data.</strong> We first obtained raw QA pairs from both AI-generated and human-annotated sources based on 6 raw videos collected from 6 participants and the corresponding log.
+            The verified and processed Multiple Choice Questions (MCQs) serve as the foundation of the Ego-R1 Data (left).
+            We take questions without answers for Chain-of-Tool-Thought (CoTT) generation, which involves creating reasoning chains that include explicit thinking steps and dynamic tool-calling sequences (right).
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ COTT. -->
+
+
+      <!-- Concurrent Work. -->
+      <!-- <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Related Links</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              There's a lot of excellent work that was introduced around the same time as ours.
+            </p>
+            <p>
+              <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an
+              idea similar to our windowed position encoding for coarse-to-fine optimization.
+            </p>
+            <p>
+              <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a
+                href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+              both use deformation fields to model non-rigid scenes.
+            </p>
+            <p>
+              Some works model videos with a NeRF by directly modulating the density, such as <a
+                href="https://video-nerf.github.io/">Video-NeRF</a>, <a
+                href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a
+                href="https://neural-3d-video.github.io/">DyNeRF</a>
+            </p>
+            <p>
+              There are probably many more by the time you are reading this. Check out <a
+                href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a
+                href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <!--/ Concurrent Work. -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      TBD
+      <!-- <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre> -->
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Thanks <a href="https://nerfies.github.io/">Nerfies</a> for the template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
