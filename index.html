@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon.jpg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -155,57 +155,6 @@
     </div>
   </section>
 
-
-  <!-- <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/steve.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/chair-tp.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/shiba.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/fullbody.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-blueshirt">
-            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/blueshirt.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-mask">
-            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/mask.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-coffee">
-            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/coffee.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-toby">
-            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/toby2.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
   <section class="section">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
@@ -244,6 +193,21 @@
 
   <section class="section">
     <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="demo" autoplay muted playsinline height="100%">
+          <source src="./static/videos/person-escalator.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-body">
+        <video id="demo" autoplay muted playsinline height="100%">
+          <source src="./static/videos/strawberry.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Ego-R1 Data: Chain-of-Tool-Thought (CoTT) for Video Reasoning</h2>
@@ -263,6 +227,36 @@
         </div>
       </div>
       <!--/ COTT. -->
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Two Stage Training: SFT + RL</h2>
+          <p>
+            Our goal is to train a language model capable of performing long-form video reasoning via a structured long-chain reasoning schema that automatically invokes multi-turn tool calls to collaboratively solve the problem. Inspired by the recent post-training techniques, we design our training framework with a two-stage strategy.
+          </p>
+          <div class="content has-text-centered">
+            <img src="./static/images/training.png" width="100%">
+            <p class="has-text-justified">Ego-R1 employs a two-stage training approach: Stage 1 utilizes supervised fine-tuning with CoTT data to establish structured tool-calling capabilities, while Stage 2 applies multi-turn reinforcement learning with rule-based rewards to optimize iterative reasoning and tool execution across diverse question types.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results</h2>
+          <div class="content has-text-centered">
+            <img src="./static/images/more-qual.png" width="100%">
+            <p class="has-text-justified"><strong>Qualitative results comparison with Video-R1.</strong> Case 1-3 illustrate successful examples where Ego-R1 outperforms Video-R1 by producing more detailed, interpretable step-by-step reasoning chains through dynamic tool-calling. In contrast, Case 4 highlights a failure case from Ego-R1 Agent. Although the observation in Step 1 correctly identified relevant information near timestamp <i>DAY2_15500000</i>, the subsequent tool call failed to adjust the temporal range accordingly, resulting in an incorrect or suboptimal retrieval in the next step, leading to the final error answer.
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <p class="has-text-justified"><strong>Quantitative results on video question-answering benchmarks.</strong> The proposed Ego-R1 Agent demonstrates superior performance across multiple metrics. Bold indicates best performance, underscored values show second best. The results from the 72B version of the model or using less frames are marked in gray. As some of the QA pairs in EgoLifeQA were used for CoTT generation and training, we excluded these from evaluation and retained only a clean subset for fair testing.
+            </p>
+            <img src="./static/images/quan.png" width="100%">
+          </div>
+        </div>
+      </div>
 
 
       <!-- Concurrent Work. -->
