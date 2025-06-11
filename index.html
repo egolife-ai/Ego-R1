@@ -142,19 +142,21 @@
     </div>
   </section>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video id="teaser" autoplay muted playsinline height="100%">
-          <source src="./static/videos/teaser.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Ego-R1 Agent orchestrates specialized tools to answer the question step-by-step, based on the observations and
-          previous actions.
-        </h2>
-      </div>
+
+
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <!-- <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div> -->
     </div>
-  </section>
+  </div>
+  <!--/ Paper video. -->
+
+
 
   <section class="section">
     <div class="container is-max-desktop">
@@ -189,17 +191,22 @@
       </div>
       <!--/ Abstract. -->
 
-      <!-- Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <video id="teaser" autoplay muted playsinline height="100%">
+              <source src="./static/videos/teaser.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Ego-R1 Agent orchestrates specialized tools to answer the question step-by-step, based on the observations
+              and
+              previous actions.
+            </h2>
           </div>
         </div>
-      </div> -->
-      <!--/ Paper video. -->
+      </section>
+
+
     </div>
   </section>
 
@@ -287,7 +294,8 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="subtitle has-text-centered">
-        Ego-R1 Agent produces more detailed, interpretable step-by-step reasoning chains through dynamic tool-calling, instead of the traditional one-step reasoning.
+        Ego-R1 Agent produces more detailed, interpretable step-by-step reasoning chains through dynamic tool-calling,
+        instead of the traditional one-step reasoning.
       </h2>
       <div id="results-carousel-face" class="carousel results-carousel">
         <div class="item item-puppet">
@@ -319,11 +327,13 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="subtitle has-text-centered">
-        The proposed Ego-R1 model demonstrates superior performance across multiple metrics*. 
+        The proposed Ego-R1 model demonstrates superior performance across multiple metrics*.
       </h2>
       <img src="./static/images/quan.png" width="100%">
       <p class="has-text-justified"><i>*Bold
-        indicates best performance, underscored values show second best. The results from the 72B version of the model or using less frames are marked in gray. As some of the QA pairs in EgoLifeQA were used for CoTT generation and training, we excluded these from evaluation and retained only a clean subset for fair testing.</i>
+          indicates best performance, underscored values show second best. The results from the 72B version of the model
+          or using less frames are marked in gray. As some of the QA pairs in EgoLifeQA were used for CoTT generation
+          and training, we excluded these from evaluation and retained only a clean subset for fair testing.</i>
       </p>
     </div>
   </section>
