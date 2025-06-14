@@ -339,11 +339,7 @@ If you have any queries, feel free to contact:
 ## 📚 Citation
 
 ```bibtex
-@article{ego-r1-2025,
-  title={Ego-R1: Reinforcement Learning for Tool-Augmented Reasoning in Egocentric Video Analysis},
-  author={Tian, Shulin and Wang, Ruiqi and others},
-  journal={arXiv preprint},
-  year={2025}
+@article{placeholder
 }
 ```
 
