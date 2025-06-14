@@ -25,15 +25,18 @@ This repository provides:
 - [2025.6.8] Officially launch the Ego-R1 codebase.
 
 ## Links
-
+- [Repository Structure](#-repository-structure)
 - [Installation](#installation)
-- [Quick start](#quick-start)
-- [Inference](#inference)
-- [Build your own dataset](#build-your-own-dataset)
-- [Build your own toolbox](#build-your-own-toolbox)
-- [Features](#features)
-- [Ackowledgement](#acknowledgement)
-- [Citations](#citations)
+- [Quick Start](#quick-start)
+- [Usage Examples](#usage-examples)
+- [Dataset](#dataset)
+- [Advanced Features](#advanced-features)
+- [Related Work](#-related-work)
+- [Acknowledgments](#-acknowledgments)
+- [License](#-license)
+- [Contributing](#-contributing)
+- [Authors & Contact](#-authors--contact)
+- [Citation](#-citation)
 
 ## 📁 Repository Structure
 
@@ -189,8 +192,11 @@ bash Ego-R1-Agent/utils/serve.sh
 ```bash
 conda activate egor1
 
-# On Ego-R1 bench
+# with a summary model
 bash Ego-R1-Agent/eval/infer_bench_summ.sh
+
+# or you can go with a basic one
+# python infer.py --arg1 xxx --arg2 xxx
 ```
 
 ### 1. Supervised Fine-Tuning (SFT)
