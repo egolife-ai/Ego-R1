@@ -21,6 +21,22 @@ html, body {
 }
 
 
+.morphing-text {
+  background-image: linear-gradient(to right, 
+  #12f3ec 0%, #2277e6 25%, #cc00d3 75%, #f10fed 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.model-name {
+  font-variant: small-caps;
+}
+
+
+
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
