@@ -1,6 +1,6 @@
-# Ego-R1
+# Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
 [![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)]()
-[![Project Page](https://img.shields.io/badge/Evaluation-Website-green?logo=googlechrome&logoColor=green)](https://egolife-ai.github.io/Ego-R1/)
+[![Project Page](https://img.shields.io/badge/EgoR1-Website-green?logo=googlechrome&logoColor=green)](https://egolife-ai.github.io/Ego-R1/)
 [![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers)
 
 
@@ -74,19 +74,19 @@ huggingface-cli download Ego-R1/Ego-R1-Data --local-dir data --repo-type dataset
 ### Environment Setup
 #### 0. Toolbox API Environment
 
-1. **Set Environment**
+i. **Set Environment**
    ```bash
    cd rag
    pip install -e .
    ```
 
-2. **Prepare the Data**
+ii. **Prepare the Data**
    ```bash
    huggingface-cli download Ego-R1/h-rag_database --local-dir data --repo-type dataset
    ```
    Unzip the Videomme and Egoschema videos.
 
-3. **Setup API**
+iii. **Setup API**
    - **Set GPT Key**
      ```bash
      export AZURE_OPENAI_ENDPOINT=ENDPOINT
@@ -117,7 +117,7 @@ huggingface-cli download Ego-R1/Ego-R1-Data --local-dir data --repo-type dataset
          python api_for_videomme.py --min_log_dir=h-rag_database/videomme/videomme_10min --sec_log_dir=h-rag_database/videomme/videomme_30s --port 7001 # default
          ```
 
-4. **Start Visual API**
+iv. **Start Visual API**
    - **Set Config**
      - Set video directory in `visual_tools/configs.yaml` for EgoLife, Egoschema, and Videomme videos separately:
        ```yaml
@@ -339,7 +339,8 @@ If you have any queries, feel free to contact:
 ## 📚 Citation
 
 ```bibtex
-@article{placeholder
+@article{
+  placeholder
 }
 ```
 
