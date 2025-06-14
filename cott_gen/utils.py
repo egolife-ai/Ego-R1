@@ -12,7 +12,7 @@ from openai import AzureOpenAI
 import base64
 import ffmpeg
 
-# TODO: add the model config for the new model
+# TODO: add the model config here or in the bash file; gemini api can be used as video_llm model; gpt-4o can serve as the vlm model; gpt-4.1 can be used as llm agent backbone
 model_config = {
     "Gemini_API_KEY": os.getenv("GEMINI_API_KEY", ""),
     "gpt-4o": {
