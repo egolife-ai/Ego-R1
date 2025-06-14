@@ -26,11 +26,11 @@ This repository provides:
 
 ## Links
 - [Repository Structure](#-repository-structure)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage Examples](#usage-examples)
-- [Dataset](#dataset)
-- [Advanced Features](#advanced-features)
+- [Installation](#-installation)
+- [Quick Start](#-quick-start)
+- [Usage Examples](#-usage-examples)
+- [Dataset](#-dataset)
+- [Advanced Features](#-advanced-features)
 - [Related Work](#-related-work)
 - [Acknowledgments](#-acknowledgments)
 - [License](#-license)
