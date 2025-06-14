@@ -1,7 +1,37 @@
 # Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
-[![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)]()
 [![Project Page](https://img.shields.io/badge/EgoR1-Website-green?logo=googlechrome&logoColor=green)](https://egolife-ai.github.io/Ego-R1/)
+[![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)]()
+[![Demo](https://img.shields.io/badge/-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/Ego-R1)
 [![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers)
+
+<div>
+  <a href="https://shulin16.github.io/">Shulin Tian</a><sup>*1,2</sup>,
+  <a href="https://suikei-wang.github.io/">Ruiqi Wang</a><sup>*1,3</sup>,
+  <a href="https://github.com/hongming21">Hongming Guo</a><sup>4</sup>,
+  <a href="https://penghao-wu.github.io/">Penghao Wu</a><sup>1</sup>,
+  <a href="https://scholar.google.com/citations?hl=zh-CN&user=kMui170AAAAJ">Yuhao Dong</a><sup>1</sup>,
+  <a href="http://leowang980.github.io/">Xiuying Wang</a><sup>1</sup>,
+  <a href="http://jingkang50.github.io/">Jingkang Yang</a><sup>1</sup>,
+  <a href="https://www2.cs.sfu.ca/~haoz/">Hao Zhang</a><sup>3</sup>,
+  <a href="https://hongyuanzhu.github.io/">Hongyuan Zhu</a><sup>2</sup>,
+  <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>1</sup>
+  <br>
+  <sup>1</sup>S-Lab, Nanyang Technological University&emsp; 
+  <sup>2</sup>A*STAR, Singapore&emsp; 
+  <sup>3</sup>Simon Fraser University&emsp; 
+  <sup>4</sup>Shanghai AI Lab
+</div>
+
+
+
+<div style="width: 100%; text-align: center; margin:auto;">
+    <img style="width:100%" src="./assets/teaser.jpg">
+</div>
+
+
+
+
+
 
 
 **Ego-R1** is a comprehensive research framework that combines reinforcement learning-based tool-use reasoning with egocentric video analysis capabilities.
@@ -14,7 +44,6 @@ This repository provides:
 - **Ego-R1 Dataset**: 25K Chain-of-Tool-Thought examples and 4.4K QA pairs
 
 ## 🌟 Key Features
-
 
 - **Multi-modal Tool-Augmented Reasoning**: Combines RAG search, Video-LLM, and Vision-Language Models for long video understanding. Agents learn to use multiple tools for answering complex egocentric video questions
 - **Reinforcement Learning**: GRPO training for thinking-reasoning-and-acting interleaved behavior
@@ -338,9 +367,7 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 ## 👨‍💻 Authors & Contact
 
-If you have any queries, feel free to contact:
-- Shulin Tian (shulin002@e.ntu.edu.sg) 
-- Ruiqi Wang (rwa135@sfu.ca)
+If you have any queries, feel free to contact: Shulin Tian (shulin002@ntu.edu.sg) & Ruiqi Wang (rwa135@sfu.ca)
 
 ## 📚 Citation
 
@@ -349,7 +376,3 @@ If you have any queries, feel free to contact:
   placeholder
 }
 ```
-
----
-
-**Note**: This project is primarily designed for research purposes in egocentric video understanding and tool-augmented AI reasoning. Please ensure you have the necessary computational resources and data access before beginning experiments.
