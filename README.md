@@ -40,20 +40,20 @@
 
 This repository provides:
 - **Chain-of-Tool-Thought Generation (cott_gen)**: Multi-modal AI agents for analyzing egocentric video data with tool-calling capabilities (RAG, Video-LLM, VLM)
-- **Ego-R1-Agent**: Reinforcement learning framework for training reasoning-and-searching interleaved LLMs (built on [veRL](https://github.com/volcengine/verl))
+- **Ego-R1-Agent**: Reinforcement learning framework for training multiturn tool-use interleaved LLMs
 - **Ego-R1 Dataset**: 25K Chain-of-Tool-Thought examples and 4.4K QA pairs
 
 ## 🌟 Key Features
 
-- **Multi-modal Tool-Augmented Reasoning**: Combines RAG search, Video-LLM, and Vision-Language Models for long video understanding. Agents learn to use multiple tools for answering complex egocentric video questions
+- **Multi-modal Tool-Augmented Reasoning**: Combines RAG search, Video-LLM, and Vision-Language Models for long video understanding. Agents learn to use multiple tools to decompose and answer complex egocentric video questions
 - **Reinforcement Learning**: GRPO training for thinking-reasoning-and-acting interleaved behavior
 - **Comprehensive Dataset**: Release the code for CoTT data generation and pre-processed data for both SFT and RL training
 
-## News
+## 📰 News
 
 - [2025.6.8] Officially launch the Ego-R1 codebase.
 
-## Links
+## 🔗 Table of Contents
 - [Repository Structure](#-repository-structure)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
@@ -122,7 +122,7 @@ iii. **Setup API**
    - **Set GPT Key**
      ```bash
      export AZURE_OPENAI_ENDPOINT=ENDPOINT
-     export AZURE_OPENAI_API_KEY=EKY
+     export AZURE_OPENAI_API_KEY=KEY
      ```
 
    - **Start RAG**
