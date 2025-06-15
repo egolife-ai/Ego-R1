@@ -321,32 +321,8 @@ The Ego-R1 agent uses a structured chain-of-tool-thought approach:
 - **Size**: 4,400 QA pairs
 - **Sources**: 1.5K Gemini-generated + 2.9K manual annotations
 - **Agents**: 6 different identities (A1-A6)
-- **Purpose**: Reinforcement learning training
+- **Purpose**: Rule-based reinforcement learning training or generating CoTT from scratch
 
-## 🛠️ Advanced Features
-
-### Custom Tool Development
-The framework supports extending tool capabilities:
-- Implement new tools in `cott_gen/tools.py`
-- Follow the async function pattern with proper annotations
-- Add cost and capability metadata for tool selection
-
-### Multi-Agent Training
-- Support for 6 different agent identities
-- Identity-specific RAG databases and configurations
-- Customizable agent behaviors and knowledge bases
-
-### Distributed Training
-- Multi-GPU support via DeepSpeed and DDP
-- Configurable batch sizes and gradient accumulation
-- Automatic checkpoint saving and resuming
-
-## 🔗 Related Work
-
-This project builds upon and integrates several research areas:
-- **Reinforcement Learning**: 
-- **Tool-Augmented AI**: Multi-modal reasoning with RAG, Video-LLM, and VLM
-- **Egocentric Video Understanding**: Specialized for first-person video analysis
 
 ## 🙏 Acknowledgments
 
