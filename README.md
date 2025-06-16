@@ -4,7 +4,7 @@
 [![Demo](https://img.shields.io/badge/-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/Ego-R1)
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fegolife-ai%2FEgo-R1&label=Visitors&icon=people&color=%238c68cd)
 [![Discord](https://dcbadge.limes.pink/api/server/hgazm6Pa?style=flat)](https://discord.gg/hgazm6Pa)
-[![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers)
+<!-- [![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers) -->
 
 <div>
   <a href="https://shulin16.github.io/">Shulin Tian</a><sup>*1,2</sup>,
