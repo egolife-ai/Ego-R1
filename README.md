@@ -61,8 +61,6 @@ This repository provides:
 - [Quick Start](#-quick-start)
 - [Usage Examples](#-usage-examples)
 - [Dataset](#-dataset)
-- [Advanced Features](#-advanced-features)
-- [Related Work](#-related-work)
 - [Acknowledgments](#-acknowledgments)
 - [License](#-license)
 - [Contributing](#-contributing)
@@ -350,7 +348,13 @@ If you have any queries, feel free to contact: Shulin Tian (shulin002@ntu.edu.sg
 ## 📚 Citation
 
 ```bibtex
-@article{
-  placeholder
+@misc{tian2025egor1chainoftoolthoughtultralongegocentric,
+      title={Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning}, 
+      author={Shulin Tian and Ruiqi Wang and Hongming Guo and Penghao Wu and Yuhao Dong and Xiuying Wang and Jingkang Yang and Hao Zhang and Hongyuan Zhu and Ziwei Liu},
+      year={2025},
+      eprint={2506.13654},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.13654}, 
 }
 ```
