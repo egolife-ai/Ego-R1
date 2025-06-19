@@ -3,7 +3,7 @@
 [![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)]()
 [![Demo](https://img.shields.io/badge/-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/Ego-R1)
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fegolife-ai%2FEgo-R1&label=Visitors&icon=people&color=%238c68cd)
-[![Discord](https://dcbadge.limes.pink/api/server/hgazm6Pa?style=flat)](https://discord.gg/hgazm6Pa)
+[![Discord](https://dcbadge.limes.pink/api/server/tVaXWtY3Vu?style=flat)](https://discord.gg/tVaXWtY3Vu)
 <!-- [![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers) -->
 
 <div>
@@ -211,7 +211,7 @@ pip install wandb google-genai
 ```
 You can follow [Search-R1](https://github.com/PeterGriffinJin/Search-R1) to build the environment as well.
 
-## 🏃‍♂️ Quick Start
+## 🚀 Quick Start
 ### Inference
 #### 1. Test the model
 ```bash
