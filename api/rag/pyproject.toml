@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "r1rag"
+version = "0.1.0"
+description = "A RAG system for video captions with temporal indexing"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Hongming", email = "ghm0221@bupt.edu.cn" }
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "nltk>=3.6.0",
+    "fastapi",
+    "uvicorn",
+    "pillow>=9.2.0",
+    "PyYAML",
+    "psutil",
+    "openai",
+    "requests"
+]
+

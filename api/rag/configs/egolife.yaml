@@ -1,0 +1,24 @@
+# API configurations
+apis:
+  A1:
+    identity: JAKE
+    port: 8001
+  A2:
+    identity: ALICE
+    port: 8002
+  A3:
+    identity: TASHA
+    port: 8003
+  A4:
+    identity: LUCIA
+    port: 8004
+  A5:
+    identity: KATRINA
+    port: 8005
+  A6:
+    identity: SHURE
+    port: 8006
+
+# Base settings
+base:
+  data_dir: data/egolife
