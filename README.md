@@ -108,11 +108,13 @@ huggingface-cli download Ego-R1/Ego-R1-Data --local-dir data --repo-type dataset
 
 i. **Set Environment**
    ```bash
-   cd rag
+   cd api/rag
    pip install -e .
    ```
+   Make sure to install FFmpeg beforehand, as it is required for the visual tools to function properly.
 
 ii. **Prepare the Data**
+  For Egoschema and Videomme benchmark
    ```bash
    huggingface-cli download Ego-R1/h-rag_database --local-dir data --repo-type dataset
    ```

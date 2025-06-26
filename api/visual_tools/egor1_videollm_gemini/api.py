@@ -22,7 +22,7 @@ def load_config():
 
 # Load configuration
 config = load_config()
-GEMINI_API_KEYS = config['egolife']['videollm']['api_key_pool']
+GEMINI_API_KEYS = config['egolife']['videollm']['gemini_api_keys']
 DATA_DIR = config['egolife']['videollm']['data_dir']
 GEMINI_PORT = config['egolife']['videollm']['gemini_port']
 

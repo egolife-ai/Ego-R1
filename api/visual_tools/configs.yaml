@@ -1,7 +1,7 @@
 
 egolife:
   videollm:
-    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2"]
+    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2","..."]
     data_dir: "/path/to/egolife"
     gemini_port: 8060
     llava_port: 8010
@@ -11,7 +11,7 @@ egolife:
 
 videomme:
   videollm:
-    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2"]
+    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2","..."]
     data_dir: "/path/to/videomme"
     gemini_port: 7060
     llava_port: 7010
@@ -19,9 +19,9 @@ videomme:
     data_dir: "/path/to/videomme"
     vlm_port: 7080
 
-egoschem:
+egoschema:
   videollm:
-    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2"]
+    gemini_api_keys: ["your-gemini-api-key-1", "your-gemini-api-key-2","..."]
     data_dir: "/path/to/egoschema"
     gemini_port: 6060
     llava_port: 6010

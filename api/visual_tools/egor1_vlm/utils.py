@@ -35,37 +35,6 @@ identity_mapping_dict ={
     "A6": "SHURE"
 }
 
-def setup_logging_and_config(model: str):
-    # Set up logging
-    LOG_DIR = os.environ["LOG_DIR"]
-    os.makedirs(LOG_DIR, exist_ok=True)
-
-    log_file = f"{LOG_DIR}/egolife_qa_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
-    os.environ["LOG_FILE"] = log_file
-    log_format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    print(f"Logs will be saved to: {os.path.abspath(log_file)}")
-    # Configure handlers
-    handlers = [
-        logging.StreamHandler(),
-        logging.FileHandler(log_file)
-    ]
-    for handler in handlers:
-        handler.setFormatter(logging.Formatter(log_format))
-
-    # Set up loggers
-    for logger_name in [TRACE_LOGGER_NAME, EVENT_LOGGER_NAME]:
-        logger = logging.getLogger(logger_name)
-        logger.setLevel(logging.INFO)
-        for handler in handlers:
-            logger.addHandler(handler)
-
-    if "4o" in model:
-        return model_config["gpt-4o"].values()
-    elif "4.1" in model:
-        return model_config["gpt-4.1"].values()
-    else:
-        raise ValueError(f"Invalid model: {model}")
-
 class GPT():
     def __init__(self, sys_prompt="You are a helpful assistant.", model: str = "gpt-4o"):
         self.endpoint, self.deployment, self.subscription_key = model_config[model].values()

@@ -136,7 +136,7 @@ async def video_llm_with_client(question: str, range_: str, identity: str, cache
     """
     loop = asyncio.get_event_loop()
     # Use functools.partial to pass parameters to video_llm_sync that will be called in the executor
-    func_call = functools.partial(video_llm_sync, question, range_, identity, cache_dir, gemini_api_key)
+    func_call = functools.partial(video_llm_sync, question, range_, identity, cache_dir, gemini_api_key,data_dir)
     
     # Run the synchronous function in the default thread pool executor
     result_dict = await loop.run_in_executor(None, func_call)
