@@ -1,4 +1,4 @@
-# Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
+# Ego-R1: Agentic Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
 [![Project Page](https://img.shields.io/badge/EgoR1-Website-green?logo=googlechrome&logoColor=green)](https://egolife-ai.github.io/Ego-R1/)
 [![Paper](https://img.shields.io/badge/cs.CV-Paper-b31b1b?logo=arxiv&logoColor=red)]()
 [![Demo](https://img.shields.io/badge/-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/Ego-R1)
@@ -350,13 +350,11 @@ If you have any queries, feel free to contact: Shulin Tian (shulin002@ntu.edu.sg
 ## 📚 Citation
 
 ```bibtex
-@misc{tian2025egor1chainoftoolthoughtultralongegocentric,
-      title={Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning}, 
-      author={Shulin Tian and Ruiqi Wang and Hongming Guo and Penghao Wu and Yuhao Dong and Xiuying Wang and Jingkang Yang and Hao Zhang and Hongyuan Zhu and Ziwei Liu},
-      year={2025},
-      eprint={2506.13654},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2506.13654}, 
+@article{tian2026ego,
+  title={Ego-R1: Agentic Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning},
+  author={Tian, Shulin and Wang, Ruiqi and Guo, Hongming and Wu, Penghao and Dong, Yuhao and Wang, Xiuying and Yang, Jingkang and Zhang, Hao and Zhu, Hongyuan and Liu, Ziwei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2026},
+  publisher={IEEE}
 }
 ```
