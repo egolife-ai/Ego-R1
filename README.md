@@ -53,6 +53,7 @@ This repository provides:
 
 ## 📰 News
 
+- [2026.5.20] Ego-R1 is accepted to TPAMI 2026! 
 - [2025.6.8] Officially launch the Ego-R1 codebase.
 
 ## 🔗 Table of Contents
