@@ -5,7 +5,7 @@
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fegolife-ai%2FEgo-R1&label=Visitors&icon=people&color=%238c68cd)
 [![Discord](https://dcbadge.limes.pink/api/server/tVaXWtY3Vu?style=flat)](https://discord.gg/tVaXWtY3Vu)
 <!-- [![GitHub stars](https://img.shields.io/github/stars/egolife-ai/Ego-R1?style=social)](https://github.com//stargazers) -->
-
+**TPAMI 2026**
 <div>
   <a href="https://shulin16.github.io/">Shulin Tian</a><sup>*1,2</sup>,
   <a href="https://suikei-wang.github.io/">Ruiqi Wang</a><sup>*1,3</sup>,
